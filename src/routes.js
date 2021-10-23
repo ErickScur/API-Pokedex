@@ -9,4 +9,5 @@ router.get('/pokemons', PokemonController.findAll);
 router.get('/pokemon/:id', PokemonController.findById);
 router.get('/pokemon/index/:pokedex_index', PokemonController.findByPokedexIndex);
 router.get('/pokemons/type/:type', PokemonController.findByType);
+router.put('/pokemon/:id', PokemonController.update);
 module.exports= router;
