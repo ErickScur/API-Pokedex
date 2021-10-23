@@ -1,5 +1,5 @@
 function capitalize(str) {
-    if(typeof(str) == String){
+    if(typeof(str) == 'string'){
         const lower = str.toLowerCase();
         return str.charAt(0).toUpperCase() + lower.slice(1);
     }else{
