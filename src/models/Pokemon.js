@@ -40,6 +40,10 @@ const PokemonSchema = new mongoose.Schema({
     Types:{
         type:Array,
         required:true
+    },
+    image:{
+        data: Buffer,
+        contentType: String
     }
 });
 mongoose.model('Pokemon', PokemonSchema);

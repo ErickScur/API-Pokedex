@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h1>Cadastro Pokemon</h1>
+    <form action="http://localhost:8080/pokemon" method="post" enctype="multipart/form-data">
+        <input type="number" name="pokedex_index" placeholder="Pokedex index"> <br>
+        <input type="text" name="name" placeholder="Name"> <br>
+        <input type="number" name="hp" placeholder="Hp"> <br>
+        <input type="number" name="attack" placeholder="attack"> <br>
+        <input type="number" name="defense" placeholder="defense"> <br>
+        <input type="number" name="special_attack" placeholder="special_attack"> <br>
+        <input type="number" name="special_defense" placeholder="special_defense"> <br>
+        <input type="number" name="speed" placeholder="speed"> <br>
+        <input type="number" name="generation" placeholder="generation"> <br>
+        <h3>Types</h3>
+        <input type="checkbox" name="Types" value="fire">
+        <label for="fire">Fire</label>
+        <input type="checkbox" name="Types" value="grass">
+        <label for="grass">Grass</label>
+        <input type="checkbox" name="Types" value="water">
+        <label for="fire">Water</label>
+        <br>
+        <input type="file" name="image">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
